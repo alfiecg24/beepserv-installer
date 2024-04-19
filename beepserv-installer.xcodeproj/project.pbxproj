@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31083CCE2BBAE668006286CE /* vnode.m in Sources */ = {isa = PBXBuildFile; fileRef = 31083CCD2BBAE668006286CE /* vnode.m */; };
+		315ADD532BD2D9650075B594 /* ValidationRelay.tipa in Resources */ = {isa = PBXBuildFile; fileRef = 315ADD522BD2D9650075B594 /* ValidationRelay.tipa */; };
 		3166612D2BAD8465009D22D8 /* BeepServInstallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166612C2BAD8465009D22D8 /* BeepServInstallerApp.swift */; };
 		316661312BAD8466009D22D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316661302BAD8466009D22D8 /* Assets.xcassets */; };
 		316661342BAD8466009D22D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316661332BAD8466009D22D8 /* Preview Assets.xcassets */; };
@@ -35,7 +36,7 @@
 		316661D42BAD9221009D22D8 /* libxpf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 316661D02BAD9221009D22D8 /* libxpf.dylib */; };
 		316661D72BAD93AB009D22D8 /* libarchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 316661D62BAD939E009D22D8 /* libarchive.tbd */; };
 		3199C2262BB78AED00A196E9 /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3199C2252BB78AED00A196E9 /* InstalledApp.swift */; };
-		319C4BE02BC07FFF0060A2C7 /* ValidationRelay.tipa in Resources */ = {isa = PBXBuildFile; fileRef = 319C4BDF2BC07FF00060A2C7 /* ValidationRelay.tipa */; };
+		319C4BE02BC07FFF0060A2C7 /* ValidationRelayTF.tipa in Resources */ = {isa = PBXBuildFile; fileRef = 319C4BDF2BC07FF00060A2C7 /* ValidationRelayTF.tipa */; };
 		319C8F7D2BB89CC900E19B34 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319C8F7C2BB89CC900E19B34 /* Update.swift */; };
 		319C8F852BB8A50600E19B34 /* update.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C8F842BB8A50600E19B34 /* update.m */; };
 		319C8F8C2BB8AFBE00E19B34 /* TrollStore.tar in Resources */ = {isa = PBXBuildFile; fileRef = 319C8F8B2BB8AFBE00E19B34 /* TrollStore.tar */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		31083CCD2BBAE668006286CE /* vnode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vnode.m; sourceTree = "<group>"; };
 		31083CCF2BBAE670006286CE /* vnode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnode.h; sourceTree = "<group>"; };
+		315ADD522BD2D9650075B594 /* ValidationRelay.tipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = ValidationRelay.tipa; sourceTree = "<group>"; };
 		316661292BAD8465009D22D8 /* beepserv-installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "beepserv-installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3166612C2BAD8465009D22D8 /* BeepServInstallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepServInstallerApp.swift; sourceTree = "<group>"; };
 		316661302BAD8466009D22D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 		316661D62BAD939E009D22D8 /* libarchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.tbd; path = usr/lib/libarchive.tbd; sourceTree = SDKROOT; };
 		318298502BB70D7800B9DB42 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		3199C2252BB78AED00A196E9 /* InstalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledApp.swift; sourceTree = "<group>"; };
-		319C4BDF2BC07FF00060A2C7 /* ValidationRelay.tipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = ValidationRelay.tipa; sourceTree = "<group>"; };
+		319C4BDF2BC07FF00060A2C7 /* ValidationRelayTF.tipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = ValidationRelayTF.tipa; sourceTree = "<group>"; };
 		319C8F7C2BB89CC900E19B34 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		319C8F842BB8A50600E19B34 /* update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = update.m; sourceTree = "<group>"; };
 		319C8F862BB8A51100E19B34 /* update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = update.h; sourceTree = "<group>"; };
@@ -650,8 +652,9 @@
 		31F85A052BAE143800A74022 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				315ADD522BD2D9650075B594 /* ValidationRelay.tipa */,
 				319C8F8B2BB8AFBE00E19B34 /* TrollStore.tar */,
-				319C4BDF2BC07FF00060A2C7 /* ValidationRelay.tipa */,
+				319C4BDF2BC07FF00060A2C7 /* ValidationRelayTF.tipa */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -716,7 +719,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319C4BE02BC07FFF0060A2C7 /* ValidationRelay.tipa in Resources */,
+				319C4BE02BC07FFF0060A2C7 /* ValidationRelayTF.tipa in Resources */,
+				315ADD532BD2D9650075B594 /* ValidationRelay.tipa in Resources */,
 				316661342BAD8466009D22D8 /* Preview Assets.xcassets in Resources */,
 				316661312BAD8466009D22D8 /* Assets.xcassets in Resources */,
 				319C8F8C2BB8AFBE00E19B34 /* TrollStore.tar in Resources */,
@@ -933,6 +937,10 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Alfie.beepserv-installer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "beepserv-installer/beepserv-installer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -976,6 +984,10 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Alfie.beepserv-installer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "beepserv-installer/beepserv-installer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

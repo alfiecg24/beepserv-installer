@@ -85,6 +85,8 @@ func doDirectInstall(_ device: Device) async -> Bool {
     let iOS14 = device.version < Version("15.0")
     let supportsFullPhysRW = !(device.cpuFamily == .A8 && device.version > Version("15.1.1")) && ((device.isArm64e && device.version >= Version(major: 15, minor: 2)) || (!device.isArm64e && device.version >= Version("15.0")))
     
+    var usingTestFlightRelay = true
+    
     Logger.log("Running on an \(device.modelIdentifier) on iOS \(device.version.readableString)")
     
     if !iOS14 {
@@ -207,8 +209,10 @@ func doDirectInstall(_ device: Device) async -> Bool {
             }
         }
         return false
-        
     }
+    
+    usingTestFlightRelay = !InstalledApp(displayName: "TestFlight", bundleName: "TestFlight", bundleIdentifier: "com.apple.TestFlight").isInstalled
+    
     if install_persistence_helper("com.apple.tips") {
         Logger.log("Successfully installed persistence helper", type: .success)
     } else {
@@ -222,8 +226,10 @@ func doDirectInstall(_ device: Device) async -> Bool {
         Logger.log("Successfully installed TrollStore", type: .success)
     }
     
+    Logger.log(usingTestFlightRelay ? "Using TestFlight relay app" : "Using regular relay app")
+    
     Logger.log("Installing beepserv")
-    if !install_beepserv(Bundle.main.path(forResource: "ValidationRelay", ofType: "tipa")) {
+    if !install_beepserv(Bundle.main.path(forResource: usingTestFlightRelay ? "ValidationRelayTF" : "ValidationRelay", ofType: "tipa")) {
         Logger.log("Failed to install beepserv", type: .error)
     } else {
         Logger.log("Successfully installed beepserv", type: .success)
@@ -304,7 +310,7 @@ func doIndirectInstall(_ device: Device) async -> Bool {
     
     persistenceHelperCandidates = candidates
     
-    if candidates.count != 1 {
+    if candidates.count < 1 {
         Logger.log("Failed to find Tips installed", type: .error)
         return false
     }
